@@ -10,6 +10,7 @@ import javax.persistence.*
 @Entity
 class Email : PanacheEntity() {
 
+    @Column(unique = true)
     var email: String = ""
 
     @CreationTimestamp

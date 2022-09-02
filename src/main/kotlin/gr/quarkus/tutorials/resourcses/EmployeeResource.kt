@@ -20,7 +20,7 @@ class EmployeeResource(val service: EmployeeService, val information: Informatio
     @GET
     @RolesAllowed("admin", "user", "writer")
     @Produces(MediaType.APPLICATION_JSON)
-    suspend fun getAll(@QueryParam("page") page: Int = 0, @QueryParam("size") size: Int = 3): Response =
+    suspend fun getAll(@QueryParam("page") page: Int = 1, @QueryParam("size") size: Int = 3): Response =
         service.getAllEmployees(page, size)
 
     @GET

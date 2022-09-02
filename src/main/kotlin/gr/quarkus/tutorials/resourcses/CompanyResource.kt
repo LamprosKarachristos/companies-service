@@ -19,7 +19,7 @@ class CompanyResource(val service: CompanyService, val information: InformationS
     @GET
     @RolesAllowed("admin", "user")
     @Produces(MediaType.APPLICATION_JSON)
-    suspend fun getAll(@QueryParam("page") page: Int = 0, @QueryParam("size") size: Int = 3): Response =
+    suspend fun getAll(@QueryParam("page") page: Int = 1, @QueryParam("size") size: Int = 3): Response =
         service.getAllCompanies(page, size)
 
     @GET

@@ -3,6 +3,7 @@ package gr.quarkus.tutorials.entities
 import com.fasterxml.jackson.annotation.JsonBackReference
 import io.quarkus.hibernate.reactive.panache.PanacheEntity
 import java.time.LocalDateTime
+import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.FetchType
 import javax.persistence.ManyToOne
@@ -11,6 +12,7 @@ import javax.persistence.PrePersist
 @Entity
 class Phone : PanacheEntity() {
 
+    @Column(unique = true)
     var number: String = ""
     var created: LocalDateTime? = null
 
