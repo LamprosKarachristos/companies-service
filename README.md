@@ -1,6 +1,6 @@
 # companies-service-v2 Project
 
-ANOTHER F@CK!ING QUARKUS TRAINING PROJECT FOR DEV-MODE....
+ANOTHER F@CK!ING QUARKUS TRAINING PROJECT WITH KEYCLOAK AUTHORIZATION AND POSTGRESQL FOR DEV-MODE....
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
